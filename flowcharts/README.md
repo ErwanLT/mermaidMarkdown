@@ -3,11 +3,12 @@
 ```mermaid
   flowchart TB
       A[Deployer en prod]-->B{c'est vendredi ?};
+      style A fill:#fcba03,color:red,stroke-width:1px
       B -- OUI --> C[Ne surtout pas déployer];
       C ==> G;
       B -- NON --> D[Aller on y va!];
       D--> E{La prod est tombée ?};
-      E -- OUI ----> F[Se planquer];
+      E -- OUI ----> F[[Se planquer]];
       E == NON ==> G((Partir en weekend));
 ```
 
@@ -26,7 +27,7 @@
 ## Left -> Right
 ```mermaid
   flowchart LR
-      A(Deployer en prod)-->B{c'est vendredi ?};
+      A[(Deployer en prod)]-->B{c'est vendredi ?};
       B -- OUI --> C[Ne surtout pas déployer];
       C ==> G;
       B -- NON --> D[Aller on y va!];
