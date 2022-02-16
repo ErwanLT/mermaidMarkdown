@@ -15,7 +15,9 @@ sequenceDiagram
     Note Left of Erwan : Toujours vérifier le calendrier
     Erwan->>Team Leader: Communique les dates.
     Team Leader -->> Erwan : A renseigné dans l'outil de gestion des congés
-    Erwan ->> Outils de Gestion : fait une demande de congés
-    Outils de Gestion ->> Team Leader : Notification
-    Team Leader -->> Erwan : C'est accepté
+    rect rgb(43, 186, 20)
+        Erwan ->> Outils de Gestion : fait une demande de congés
+        Outils de Gestion ->> Team Leader : Notification
+        Team Leader -->> Erwan : C'est accepté
+    end
 ```
