@@ -3,10 +3,12 @@
 sequenceDiagram
     participant Erwan
     participant Team Leader
-    Erwan ->> Team Leader: Je vais poser des congés.
-    activate Team Leader
-    Team Leader -->> Erwan: Ok, donne moi les dates.
-    deactivate Team Leader
+    rect rgb(191, 223, 255)
+        Erwan ->> Team Leader: Je vais poser des congés.
+        activate Team Leader
+        Team Leader -->> Erwan: Ok, donne moi les dates.
+        deactivate Team Leader
+    end
     loop Dates check
         Erwan ->> Erwan: Vérifie son calendrier
     end
