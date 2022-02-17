@@ -7,13 +7,18 @@ options
 }
 end
 commit
-branch newbranch
-checkout newbranch
+branch branchTest
+checkout branchTest
+commit
+branch branchFeature
+checkout branchFeature
 commit
 commit
+merge branchFeature
+checkout branchTest
 checkout master
 commit
 commit
-merge newbranch
+merge branchTest
 
 ```
